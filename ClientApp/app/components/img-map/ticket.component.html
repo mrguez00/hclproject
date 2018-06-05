@@ -1,0 +1,11 @@
+﻿<div class="row">
+    <div class="col-md-6" style="margin-bottom: 25px; max-width:800px;">
+        <img-map #imgMap
+                    src="{{webAPIRoot}}Content/Images/car.png"
+                    markerRadius="20"
+                    [markers]="markers"
+                    (mark)="onMark($event, ROIHeader.RepairOrderInspectionItems[0])"
+                    (change)="onChange($event, ROIHeader.RepairOrderInspectionItems[0])"></img-map>
+    </div>
+</div>
+
